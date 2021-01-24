@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #efefef;
+  line-height: 1.7em;
+  font-size: 15px;
+}
+
+/* UTILITIES */
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
+  overflow: auto;
+}
+
+.clear {
+  clear: both;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.lead {
+  text-transform: uppercase;
+  font-size: 60px;
+}
+
+.m-heading {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.sub-heading {
+  text-transform: capitalize;
+  font-size: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px;
+}
+
+.btn--wine {
+  background: #5c0202;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* NAVBAR */
+#navbar {
+  background: #262525;
+}
+
+#navbar h1 {
+  float: left;
+  padding-top: 20px;
+}
+
+#navbar h1 a {
+  color: #fff;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  color: #fff;
+  padding: 20px;
+}
+
+#navbar ul li a:hover {
+  background: #5c0202;
+}
+
+/* SHOWCASE */
+#showcase {
+  height: 600px;
+  font-size: 15px;
+  background-image: url("/img/showcase.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+#showcase::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #262525;
+  opacity: 0.75;
+  z-index: -1;
+}
+
+#showcase .showcase-content {
+  margin-top: 243px;
+  text-align: center;
+}
+
+#showcase .showcase-content h1 {
+  font-weight: 400;
+}
+
+#showcase .showcase-content p {
+  font-weight: 500;
+}
+
+#showcase .showcase-content a {
+  color: #fff;
+}
+
+/* #showcase .showcase-content span {
+  color: #5c0202;
+} */
+
+#showcase .showcase-content a:hover {
+  background: #262525;
+}
+
+/* ABOUT US */
+#about {
+  background: #fff;
+  font-size: 15px;
+  text-align: center;
+}
+
+#about .about-content {
+  padding: 10px;
+  height: 100%;
+  margin: 10px 0;
+}
+
+#about .about-content .about-info {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+#about .about-content .about-info h2 {
+  color: #5c0202;
+}
+
+#about .about-content .about-info h3 {
+  font-weight: 700;
+  line-height: 1.5em;
+}
+
+#about .about-content .about-info p a {
+  font-weight: bold;
+  color: #5c0202;
+  border-bottom: 2px solid #5c0202;
+}
+
+#about .about-content .about-images {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+#about .about-content .about-images img {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+  display: block;
+}
+
+#about .about-content .about-images img:first-child {
+  margin-top: 40px;
+}
+
+/* SERVICES */
+.services {
+  background: #fff;
+  margin: 10px 0;
+}
+
+.services .services-content {
+  text-align: center;
+}
+
+.services .services-content h2 {
+  color: #5c0202;
+}
+
+.services .services-content .card-content .card {
+  float: left;
+  width: 33.333%;
+}
+
+.services .services-content .card-content .card i {
+  font-size: 60px;
+  padding: 10px;
+}
+
+.services .services-content .card-content .card p {
+  margin: 0 0;
+  padding-bottom: 10px;
+}
+
+.services .services-content .card-content .card-2 {
+  background: #5c0202;
+  color: #fff;
+}
+
+/* ROOMS */
+.rooms {
+  background: #fff;
+}
+
+.rooms .rooms-content {
+  margin: 10px 0;
+  text-align: center;
+  overflow: auto;
+}
+
+.rooms .rooms-content .room {
+  width: 33.33%;
+  float: left;
+  height: 400px;
+}
+
+.rooms .rooms-content .room-1,
+.rooms .rooms-content .room-3 {
+  background: #efefef;
+}
+
+.rooms .rooms-content .room .room-detail {
+  padding: 10px;
+}
+
+.rooms .rooms-content .room .room-detail h2,
+.rooms .rooms-content .room .room-detail p sup {
+  color: #5c0202;
+}
+
+.rooms .rooms-content .room .room-detail h3 {
+  margin-top: 10px;
+}
+
+.rooms .rooms-content .room .room-detail p {
+  font-size: 35px;
+  margin-top: 20px;
+}
+
+.rooms .rooms-content .room .room-detail a {
+  color: #fff;
+  margin-top: 5px;
+}
+
+.rooms .rooms-content .room .room-detail img {
+  width: 100%;
+  height: 200px;
+}
+
+/* FOOTER */
+#footer {
+  background: #262525;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
+
+#footer ul {
+  list-style: none;
+}
+
+#footer ul li {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 0 5px;
+}
+
+#footer ul li a i {
+  font-size: 20px;
+  color: #fff;
+  background: #5c0202;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 10px;
+}
+
+#footer ul li a:hover i {
+  background: #fff;
+  color: #5c0202;
+}
+
+#footer p {
+  letter-spacing: 2px;
+}
+
+#footer p a {
+  color: #5c0202;
+  font-weight: bold;
+}
+
+#footer p a:hover {
+  color: #fff;
+}
